@@ -1,0 +1,24 @@
+{
+    "name": "visa_to_the_moon_reactjs",
+    "version": "1.0.0",
+    "description": "\"Visa to the Moon que ayude a la venta de tickets a la luna",
+    "main": "index.js",
+    "scripts": {
+        "build": "parcel build public/index.html --no-source-maps",
+        "start": "parcel public/index.html --open --port 9000"
+    },
+    "author": "Maximiliano Garcia Mortigliengo",
+    "license": "ISC",
+    "dependencies": {
+        "parcel-plugin-static-files-copy": "^2.5.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4"
+    },
+    "staticFiles": {
+        "staticPath": "public",
+        "watcherGlob": "**"
+    }
+}
