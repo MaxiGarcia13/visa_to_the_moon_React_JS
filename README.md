@@ -12,7 +12,7 @@
 -   `npm start`
     (Please, Enter on you terminal).
 
-## Show project without install dependencies.
+## Run project without install dependencies.
 
 NOTE: `dist` it's a build generated with Parcel by me.
 
