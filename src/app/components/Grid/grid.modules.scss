@@ -1,0 +1,39 @@
+@import '../../shared/styles/variables.scss';
+
+.grid {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: $background-color-scondary;
+    position: relative;
+    width: 100vw;
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-notebook}) {
+    .grid {
+        grid-template-columns: 26.5vw 22.5vw 22.5vw 22.5vw;
+        grid-template-rows: repeat(2, 1fr);
+        flex: 1;
+        height: 640px;
+        max-width: calc(100vw - #{$widthOffsetRight});
+    }
+}
+
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-tablet}) and (max-width: #{$max-width-tablet}) {
+    .grid {
+        grid-template-columns: 0.45fr 0.55fr;
+        grid-template-rows: repeat(6, 1fr);
+        min-height: 100%;
+        overflow: auto;
+    }
+}
+
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-phone}) and (max-width: #{$max-width-phone}) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 140px 500px 715px 375px 330px;
+    }
+}

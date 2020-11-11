@@ -1,0 +1,177 @@
+@import '../../shared/styles/variables.scss';
+@import '../../shared//styles/animations.scss';
+
+.grid-item-1 {
+    overflow: hidden;
+    background-image: url(/assets/images/rock.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 100%;
+    background-position: 100%;
+}
+
+.grid-item-2 {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    &.slow-shake {
+        animation-play-state: paused;
+    }
+}
+
+.grid-item-3 {
+    overflow: hidden;
+    background: linear-gradient(118deg, $background-color-third 0%, 71%, rgba($background-color-primary, 0) 100%);
+    position: relative;
+}
+
+.grid-item-4 {
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.grid-item-5 {
+    overflow: hidden;
+    background-color: $background-color-scondary;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item-6 {
+    overflow: hidden;
+    display: none;
+
+    &.slow-shake {
+        animation-play-state: paused;
+    }
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-notebook}) {
+    .grid-item-1 {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+    .grid-item-2 {
+        grid-area: 1 / 2 / 3 / 5;
+        overflow: hidden;
+        background-size: cover;
+        background-position-x: calc(100% * 0.5);
+        background-position-y: calc(100% * 0.8);
+    }
+    .grid-item-3 {
+        grid-area: 1 / 2 / 2 / 3;
+        height: 442px;
+        z-index: 1;
+    }
+    .grid-item-4 {
+        grid-area: 1 / 4 / 2 / 5;
+        background-size: cover;
+        background-position-x: 35%;
+        position: absolute;
+        height: 100%;
+        width: calc(100% + #{$widthOffsetRight});
+    }
+    .grid-item-5 {
+        grid-area: 2 / 3 / 3 / 4;
+        width: 100%;
+        height: 258px;
+        position: absolute;
+        bottom: -60px;
+    }
+
+    .grid-item-6 {
+        grid-area: 2 / 2 / 3 / 3;
+        overflow: hidden;
+        display: block;
+        background-image: url(/assets/images/background.jpg);
+        background-position-x: left;
+        background-position-y: bottom;
+        height: 100%;
+
+        &.slow-shake {
+            animation-play-state: running;
+        }
+    }
+}
+
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-tablet}) and (max-width: #{$max-width-tablet}) {
+    .grid-item-1 {
+        grid-area: 1 / 1 / 4 / 2;
+        z-index: 1;
+        min-height: 554px;
+    }
+    .grid-item-2 {
+        grid-area: 3 / 1 / 7 / 3;
+        background-size: cover;
+        background-position-x: 40%;
+        background-position-y: 0px;
+        min-height: 700px;
+
+        &.slow-shake {
+            animation-play-state: running;
+        }
+    }
+    .grid-item-3 {
+        grid-area: 1 / 2 / 3 / 3;
+    }
+    .grid-item-4 {
+        grid-area: 3 / 2 / 6 / 3;
+        position: relative;
+        background-position-x: 35%;
+        background-size: cover;
+        height: 100%;
+        min-height: 500px;
+    }
+    .grid-item-5 {
+        grid-area: 4 / 1 / 5 / 2;
+        position: absolute;
+        width: calc(100% + 60px);
+        height: 188px;
+        top: 0;
+    }
+    .grid-item-6 {
+        display: none;
+    }
+}
+
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-phone}) and (max-width: #{$max-width-phone}) {
+    .grid-item-1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .grid-item-2 {
+        grid-area: 3 / 1 / 5 / 2;
+        background-size: 1100px;
+        background-position-x: 20%;
+        background-position-y: 100%;
+
+        &.slow-shake {
+            animation-play-state: running;
+        }
+    }
+    .grid-item-3 {
+        grid-area: 3 / 1 / 4 / 2;
+        z-index: 1;
+    }
+    .grid-item-4 {
+        grid-area: 2 / 1 / 3 / 2;
+        background-size: auto 140%;
+        background-position-x: 38%;
+        position: relative;
+    }
+    .grid-item-5 {
+        grid-area: 5 / 1 / 6 / 2;
+        background-image: url(/assets/images/background_moon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        position: inherit;
+        bottom: 0;
+        background-position: center center;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}

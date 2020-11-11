@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.btn {
+    font-size: 24px;
+    font-family: $font-family-secodnary;
+    font-weight: 600;
+    border-radius: 1px;
+    font-style: italic;
+    box-shadow: 0 1px 2px 0 rgba($background-color-third, 0.302), 0 1px 3px 1px rgba($background-color-third, 0.149);
+    cursor: pointer;
+
+    &.primary {
+        background: $button-color-accent;
+        color: $font-color-primary;
+        height: 72px;
+        width: 246px;
+        border: 1px solid $button-color-accent;
+    }
+}

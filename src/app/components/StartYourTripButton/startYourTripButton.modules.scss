@@ -1,0 +1,37 @@
+@import '../../shared/styles/variables.scss';
+
+.wrapper {
+    background: transparent;
+    z-index: 2;
+    position: absolute;
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-notebook}) {
+    .wrapper {
+        left: 10%;
+        top: 442px;
+        margin-left: 15px;
+    }
+}
+
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-tablet}) and (max-width: #{$max-width-tablet}) {
+    .wrapper {
+        top: 470px;
+        left: 90px;
+    }
+}
+
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-phone}) and (max-width: #{$max-width-phone}) {
+    .wrapper {
+        top: 640px;
+        padding: 20px 0;
+        background-color: $background-color-scondary;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

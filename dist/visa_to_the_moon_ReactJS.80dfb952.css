@@ -1,0 +1,533 @@
+._grid_97529 {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #1b1d2b;
+  position: relative;
+  width: 100vw;
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: 1025px) {
+  ._grid_97529 {
+    grid-template-columns: 26.5vw 22.5vw 22.5vw 22.5vw;
+    grid-template-rows: repeat(2, 1fr);
+    flex: 1;
+    height: 640px;
+    max-width: calc(100vw - calc(0.06 * 100vw));
+  }
+}
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  ._grid_97529 {
+    grid-template-columns: 0.45fr 0.55fr;
+    grid-template-rows: repeat(6, 1fr);
+    min-height: 100%;
+    overflow: auto;
+  }
+}
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  ._grid_97529 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 500px 715px 375px 330px;
+  }
+}
+._slow-shake_20dae {
+  animation: _slow-shake-animation_20dae 2000ms infinite ease-in-out;
+  transition: transform 200ms;
+}
+
+._moving-to-rigth_20dae {
+  animation: _moving-to-right-animation_20dae 2s linear infinite;
+  transition: transform 200ms;
+}
+
+/* The animation code */
+@keyframes _slow-shake-animation_20dae {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(2px) translateX(2px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+@keyframes _moving-to-right-animation_20dae {
+  0% {
+    transform: translateX(0%);
+    width: 0%;
+  }
+  50% {
+    width: 30%;
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+._grid-item-1_20dae {
+  overflow: hidden;
+  background-image: url(/rock.653931b0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 100%;
+  background-position: 100%;
+}
+
+._grid-item-2_20dae {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+._grid-item-2_20dae._slow-shake_20dae {
+  animation-play-state: paused;
+}
+
+._grid-item-3_20dae {
+  overflow: hidden;
+  background: linear-gradient(118deg, #102023 0%, 71%, rgba(32, 95, 93, 0) 100%);
+  position: relative;
+}
+
+._grid-item-4_20dae {
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+._grid-item-5_20dae {
+  overflow: hidden;
+  background-color: #1b1d2b;
+  display: flex;
+  flex-direction: column;
+}
+
+._grid-item-6_20dae {
+  overflow: hidden;
+  display: none;
+}
+._grid-item-6_20dae._slow-shake_20dae {
+  animation-play-state: paused;
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: 1025px) {
+  ._grid-item-1_20dae {
+    grid-area: 1/1/3/2;
+  }
+
+  ._grid-item-2_20dae {
+    grid-area: 1/2/3/5;
+    overflow: hidden;
+    background-size: cover;
+    background-position-x: calc(100% * 0.5);
+    background-position-y: calc(100% * 0.8);
+  }
+
+  ._grid-item-3_20dae {
+    grid-area: 1/2/2/3;
+    height: 442px;
+    z-index: 1;
+  }
+
+  ._grid-item-4_20dae {
+    grid-area: 1/4/2/5;
+    background-size: cover;
+    background-position-x: 35%;
+    position: absolute;
+    height: 100%;
+    width: calc(100% + calc(0.06 * 100vw));
+  }
+
+  ._grid-item-5_20dae {
+    grid-area: 2/3/3/4;
+    width: 100%;
+    height: 258px;
+    position: absolute;
+    bottom: -60px;
+  }
+
+  ._grid-item-6_20dae {
+    grid-area: 2/2/3/3;
+    overflow: hidden;
+    display: block;
+    background-image: url(/background.61b7e8ea.jpg);
+    background-position-x: left;
+    background-position-y: bottom;
+    height: 100%;
+  }
+  ._grid-item-6_20dae._slow-shake_20dae {
+    animation-play-state: running;
+  }
+}
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  ._grid-item-1_20dae {
+    grid-area: 1/1/4/2;
+    z-index: 1;
+    min-height: 554px;
+  }
+
+  ._grid-item-2_20dae {
+    grid-area: 3/1/7/3;
+    background-size: cover;
+    background-position-x: 40%;
+    background-position-y: 0px;
+    min-height: 700px;
+  }
+  ._grid-item-2_20dae._slow-shake_20dae {
+    animation-play-state: running;
+  }
+
+  ._grid-item-3_20dae {
+    grid-area: 1/2/3/3;
+  }
+
+  ._grid-item-4_20dae {
+    grid-area: 3/2/6/3;
+    position: relative;
+    background-position-x: 35%;
+    background-size: cover;
+    height: 100%;
+    min-height: 500px;
+  }
+
+  ._grid-item-5_20dae {
+    grid-area: 4/1/5/2;
+    position: absolute;
+    width: calc(100% + 60px);
+    height: 188px;
+    top: 0;
+  }
+
+  ._grid-item-6_20dae {
+    display: none;
+  }
+}
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  ._grid-item-1_20dae {
+    grid-area: 1/1/2/2;
+  }
+
+  ._grid-item-2_20dae {
+    grid-area: 3/1/5/2;
+    background-size: 1100px;
+    background-position-x: 20%;
+    background-position-y: 100%;
+  }
+  ._grid-item-2_20dae._slow-shake_20dae {
+    animation-play-state: running;
+  }
+
+  ._grid-item-3_20dae {
+    grid-area: 3/1/4/2;
+    z-index: 1;
+  }
+
+  ._grid-item-4_20dae {
+    grid-area: 2/1/3/2;
+    background-size: auto 140%;
+    background-position-x: 38%;
+    position: relative;
+  }
+
+  ._grid-item-5_20dae {
+    grid-area: 5/1/6/2;
+    background-image: url(/background_moon.1d8719f2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    position: inherit;
+    bottom: 0;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+._btn_cebc1 {
+  font-size: 24px;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  border-radius: 1px;
+  font-style: italic;
+  box-shadow: 0 1px 2px 0 rgba(16, 32, 35, 0.302), 0 1px 3px 1px rgba(16, 32, 35, 0.149);
+}
+._btn_cebc1._primary_cebc1 {
+  background: #fb004c;
+  color: #e2e4e4;
+  height: 72px;
+  width: 246px;
+  border: 1px solid #fb004c;
+}
+._wrapper_2c72e {
+  background: transparent;
+  z-index: 2;
+  position: absolute;
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: 1025px) {
+  ._wrapper_2c72e {
+    left: 10%;
+    top: 442px;
+    margin-left: 15px;
+  }
+}
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  ._wrapper_2c72e {
+    top: 470px;
+    left: 90px;
+  }
+}
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  ._wrapper_2c72e {
+    top: 640px;
+    padding: 20px 0;
+    background-color: #1b1d2b;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+._wrapper_9143a {
+  font-family: "Merriweather", serif;
+}
+._wrapper_9143a ._icon_9143a {
+  height: 105px;
+  width: 105px;
+}
+._wrapper_9143a ._line_9143a {
+  height: 4px;
+  width: 100px;
+  background-color: #1eb78e;
+}
+._wrapper_9143a ._subtitle_9143a,
+._wrapper_9143a ._hashtag_9143a {
+  margin: 0;
+  padding: 0;
+}
+._wrapper_9143a ._subtitle_9143a {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+._wrapper_9143a ._hashtag_9143a {
+  margin-top: 15px;
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: 1025px) {
+  ._wrapper_9143a {
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+}
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  ._wrapper_9143a {
+    position: absolute;
+    top: 76px;
+    padding-left: 30px;
+  }
+}
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  ._wrapper_9143a {
+    height: 100%;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+._wrapper_f655a {
+  flex: 0.4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+._wrapper_f655a ._item_f655a {
+  font-size: 18px;
+  color: #1eb78e;
+  margin: 0 10px;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Merriweather", serif;
+  padding-bottom: 5px;
+}
+._wrapper_f655a ._item_f655a._active_f655a {
+  color: #e2e4e4;
+  border-bottom: 2px solid #e2e4e4;
+}
+
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  ._navigation_f655a {
+    display: none;
+  }
+}
+._slow-shake_d8a86 {
+  animation: _slow-shake-animation_d8a86 2000ms infinite ease-in-out;
+  transition: transform 200ms;
+}
+
+._moving-to-rigth_d8a86 {
+  animation: _moving-to-right-animation_d8a86 2s linear infinite;
+  transition: transform 200ms;
+}
+
+/* The animation code */
+@keyframes _slow-shake-animation_d8a86 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(2px) translateX(2px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+@keyframes _moving-to-right-animation_d8a86 {
+  0% {
+    transform: translateX(0%);
+    width: 0%;
+  }
+  50% {
+    width: 30%;
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+._progressBar_d8a86 {
+  width: 100%;
+  height: 4px;
+  background-color: #e2e4e4;
+  position: relative;
+  overflow: hidden;
+}
+._progressBar_d8a86::before {
+  animation: _moving-to-right-animation_d8a86 2s linear infinite;
+  content: " ";
+  width: 30%;
+  height: 100%;
+  background: #1eb78e;
+  position: absolute;
+}
+._progressBarWrapper_06896 {
+  flex: 0.6;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+._progressBarWrapper_06896 > * {
+  max-width: 200px;
+}
+body {
+  background: #205f5d;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #e2e4e4;
+}
+
+._wrapper_d6b84 {
+  display: block;
+}
+
+body,
+._wrapper_d6b84 {
+  height: 100vh;
+  width: 100vw;
+}
+
+._logo_d6b84 {
+  z-index: 2;
+  position: absolute;
+  height: 194px;
+  width: 194px;
+}
+
+._title_d6b84 {
+  z-index: 2;
+  font-size: 78px;
+  position: absolute;
+  margin: 0;
+  line-height: 1;
+}
+
+._footerTitle_d6b84 {
+  display: none;
+  position: relative;
+  padding: 0 0 60px 25px;
+  font-size: 46px;
+  margin: 0;
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: 1025px) {
+  ._wrapper_d6b84 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  ._logo_d6b84 {
+    top: 54px;
+    left: 10%;
+  }
+
+  ._title_d6b84 {
+    top: 300px;
+    left: 10%;
+  }
+}
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  ._logo_d6b84 {
+    top: 76px;
+    left: 124px;
+  }
+
+  ._title_d6b84 {
+    top: 312px;
+    max-width: 370px;
+    font-size: 68px;
+    left: 90px;
+  }
+}
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  ._logo_d6b84 {
+    top: 50px;
+    left: calc(50% - 97px);
+  }
+
+  ._title_d6b84 {
+    font-size: 58px;
+    top: 495px;
+    padding-left: 20px;
+  }
+
+  ._showInScreenPhone_d6b84 {
+    display: block;
+  }
+
+  ._hideInScreenPhone_d6b84 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=/visa_to_the_moon_ReactJS.80dfb952.css.map */

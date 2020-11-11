@@ -1,0 +1,35 @@
+@import '../../shared/styles/variables.scss';
+
+.wrapper {
+    flex: 0.4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .item {
+        font-size: 18px;
+        color: $font-color-accent;
+        margin: 0 10px;
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: $font-family-secodnary;
+        padding-bottom: 5px;
+
+        &.active {
+            color: $font-color-primary;
+            border-bottom: 2px solid $font-color-primary;
+        }
+    }
+}
+
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-phone}) and (max-width: #{$max-width-phone}) {
+    .navigation {
+        display: none;
+    }
+}

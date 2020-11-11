@@ -1,0 +1,98 @@
+@import '../../shared/styles/variables.scss';
+
+body {
+    background: $background-color-primary;
+    margin: 0;
+    font-family: $font-family-primary;
+    color: $font-color-primary;
+}
+
+.wrapper {
+    display: block;
+}
+
+body,
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo {
+    z-index: 2;
+    position: absolute;
+    height: 194px;
+    width: 194px;
+}
+
+.title {
+    z-index: 2;
+    font-size: 78px;
+    position: absolute;
+    margin: 0;
+    line-height: 1;
+}
+
+.footerTitle {
+    display: none;
+    position: relative;
+    padding: 0 0 60px 25px;
+    font-size: 46px;
+    margin: 0;
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-notebook}) {
+    .wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo {
+        top: 54px;
+
+        left: 10%;
+    }
+
+    .title {
+        top: 300px;
+        left: 10%;
+    }
+}
+
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-tablet}) and (max-width: #{$max-width-tablet}) {
+    .logo {
+        top: 76px;
+        left: 124px;
+    }
+
+    .title {
+        top: 312px;
+        max-width: 370px;
+        font-size: 68px;
+        left: 90px;
+    }
+}
+
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-phone}) and (max-width: #{$max-width-phone}) {
+    .logo {
+        top: 50px;
+        left: calc(50% - 97px);
+    }
+
+    .title {
+        font-size: 58px;
+        top: 495px;
+        padding-left: 20px;
+    }
+
+    .showInScreenPhone {
+        display: block;
+    }
+
+    .hideInScreenPhone {
+        display: none;
+    }
+}

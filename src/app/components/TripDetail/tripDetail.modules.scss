@@ -1,0 +1,60 @@
+@import '../../shared/styles/variables.scss';
+
+.wrapper {
+    font-family: $font-family-secodnary;
+
+    & .icon {
+        height: 105px;
+        width: 105px;
+    }
+
+    & .line {
+        height: 4px;
+        width: 100px;
+        background-color: $font-color-accent;
+    }
+
+    & .subtitle,
+    .hashtag {
+        margin: 0;
+        padding: 0;
+    }
+
+    & .subtitle {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    & .hashtag {
+        margin-top: 15px;
+    }
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-notebook}) {
+    .wrapper {
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+}
+
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-tablet}) and (max-width: #{$max-width-tablet}) {
+    .wrapper {
+        position: absolute;
+        top: 76px;
+        padding-left: 30px;
+    }
+}
+
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: #{$min-width-phone}) and (max-width: #{$max-width-phone}) {
+    .wrapper {
+        height: 100%;
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
